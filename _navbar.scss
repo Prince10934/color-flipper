@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.45rem;
+    height: 65px;
+    box-shadow: 0 3px 3px 0 $light-grey;
+    @media (max-width: 400px) {
+        flex-direction: column;
+        min-height: 100px;
+    }
+    &__logo {
+        color: $light-blue;
+        font-weight: bold;
+    }
+    &__links {
+        @media (max-width: 400px) {
+            padding-top: 1rem;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                a {
+                    padding: 0 1rem;
+                    text-decoration: none;
+                    color: $dark-grey;
+                    display: block;
+                    &:hover {
+                        color: $light-blue;
+                        transform: scale(1.1);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
